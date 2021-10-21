@@ -1,0 +1,20 @@
+---
+title: "Maps"
+author: "Simon W Laufried"
+date: "10/21/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 21st October 2021
+
+```{r maps, echo=FALSE}
+library(leaflet)
+my_map <- leaflet() %>%
+    addTiles() %>%
+    addMarkers(lat = 39.2980803, lng = -76.5898801, popup = "Jeff's office")
+my_map
+```
